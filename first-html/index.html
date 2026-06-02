@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First HTML Page</title>
+    <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <!-- Internal CSS h2 tag okke underline cheydhu-->
+    <style>
+        h1{
+            color:blue;
+            /* Not Changed due to priority */
+        }
+        h2{
+            text-decoration: underline;
+        }
+    </style>
+    <!-- External CSS lowest priority -->
+     <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <!-- inline CSS this have more priority than other css -->
+        <h1 style="color:red">
+            My Resume - Muhammed Muhsin M
+        </h1>
+    </header>
+    <!-- Navigation links -->
+    <nav>
+        <ul>
+            <li>
+                <!-- Same page then use href=# -->
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contacts">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <section id="home">
+                <h2>
+                    About Me
+                </h2>
+                <p>
+                    <!-- lorem --vs code teqnique for random text for debugging-->
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic illum, quae optio aperiam cumque ea ratione! Veniam, ea! Ullam omnis beatae a eos ipsa enim, voluptate qui sapiente dolore vero quia ea placeat explicabo aliquid, sed quo ratione cum quibusdam.
+                </p>
+            </section>
+            <section id="project">
+                <h2>
+                    Project
+                </h2>
+                <ol>
+                    <li>Calculator Project</li>
+                    <li>Spam Mail Findiong Project</li>
+                    <li>Credict Card Checking</li>
+                </ol>
+            </section>
+            <section id="skill">
+                <h2>
+                    Skills
+                </h2>
+                <div>
+                    <figure>
+                        <img src="images/html.png" 
+                        alt="HTML 5 LOGO"
+                        height="100" width="100"
+                        >
+                        <figcaption>HTML 5</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/css.webp" 
+                        alt="CSS LOGO"
+                        height="100" width="100"
+                        >
+                        <figcaption>CSS</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/js.jpg" 
+                        alt="JS LOGO"
+                        height="100" width="100"
+                        >
+                        <figcaption>JS</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="grid">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JS</div>
+            </section>
+        </article>
+        <article id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-section">
+                    <label for="">Name</label>
+                    <!-- required kodtha adh nirbandhamaan -->
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-section">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email" placeholder="abc@xyz.com">
+                </div>
+                <div>
+                    <label for="">PhoneNo</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

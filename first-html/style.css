@@ -1,0 +1,73 @@
+/* Universal selector -Ella elements ineyum orumich tag cheyym*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Playwrite GB J", cursive;
+    color:rgb(58, 2, 106);
+    background-color: background: #a9c9d6;
+    background: linear-gradient(90deg, rgba(169, 201, 214, 1) 1%, rgba(216, 232, 224, 1) 28%, rgba(242, 239, 199, 1) 57%);
+}
+
+header{
+    text-align: center;
+}
+/* css selector-select h1 inside the header using this */
+header h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    border: 5px solid rgb(166, 97, 230);
+}
+nav{
+    background-color: aliceblue;
+    padding: 1rem;
+}
+nav ul{
+    display: flex;  
+    flex-direction: row;
+    gap:2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+/* This method of selecting called discentent selector */
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(240, 84, 0, 0.94);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+}
+nav ul li a:hover{
+    background-color: black;
+    padding:1rem;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.form-section{
+    border:1px solid blue;
+}
+/* grid section study for tommorrow */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid div {
+    background-color: lightblue;
+    padding: 20px;
+}
